@@ -4,6 +4,10 @@ const crypto=require('cyrpto')
 const { createHash } = require('crypto')
 const { buffer } = require('stream/consumers')
 require(dotenv).config()
+const express=require('express')
+
+const app=express()
+app.use(express.json())
 
 const {
     MID,
